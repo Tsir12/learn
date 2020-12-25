@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AB47BC"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvHead"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="My GPS test app"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="131dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/tvHead"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="start gps" />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStart"
+        android:id="@+id/sw1"
+        android:text="update every 5 seconds"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:text="Longtitude: "
+        android:id="@+id/tvLong"
+        android:layout_below="@id/sw1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvLong"
+            android:textSize="40sp"
+            android:id="@+id/tvRealLong"
+            android:layout_below="@id/sw1"
+            android:textColor="#000000"
+            android:text="0.0"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:text="Latitude: "
+        android:id="@+id/tvLat"
+        android:layout_below="@id/tvLong"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvLat"
+        android:textSize="40sp"
+        android:id="@+id/tvRealLat"
+        android:text="0.0"
+        android:layout_below="@id/tvLong"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address: "
+        android:layout_below="@id/tvLat"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:id="@+id/tvAddress"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvAddress"
+        android:layout_below="@id/tvLat"
+        android:text="Not Available"
+        android:textSize="40sp"
+        android:id="@+id/tvRealAddress"
+        android:textColor="#000000"/>
+</RelativeLayout>
